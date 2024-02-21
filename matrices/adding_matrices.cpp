@@ -30,6 +30,28 @@ int main()
 
         }
     }
+    cout <<"The first matrix is :" <<endl;
+    for (i =0 ;i <r1 ;i++)
+    {
+        for (j =0 ;j <c1 ;j++)
+        {
+           
+            cout << arr1[i][j] <<" ";
+        }
+        cout <<endl;
+    }
+    cout <<"The second matrix is : "<<endl;
+    for (i =0 ;i<r2 ;i++)
+    {
+        for (j =0 ;j<c2 ;j++)
+        {
+            
+            cout<< arr2[i][j] <<" ";
+
+        }
+        cout <<endl;
+    }
+
 
     if (r1 == r2 && c1 ==c2)
     {
@@ -46,11 +68,14 @@ int main()
         cout <<"The length of rows and coloumns are different hence addition of these two matrices are not possible";
     }
 
-    for (i =0;i<r1 ;i++)
+    cout <<"The resultant Matrix is :"<<endl;
+
+    for(i =0;i<r1 ;i++)
     {
         for (j =0;j<c1 ;j++)
         {
-            cout <<"The result after addition is arr3["<<i+1<<"]["<<j+1<<"] is "<<arr3[i][j]<<endl;
+           cout <<arr3[i][j]<<" ";
         }
+        cout<<endl;
     }
 }
