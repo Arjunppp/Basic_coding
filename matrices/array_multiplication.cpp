@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int r1,c1,r2,c2 ,i,j,option,k;
+    int r1,c1,r2,c2 ,i,j,option,k,sum;
     cout <<"ENeter the number of rows of the first matrix";
     cin >>r1;
     cout<<"Eneter the number of coloumns of the first matrix";
@@ -40,11 +40,12 @@ int main()
             
            for (i =0 ;i <r1 ;i++)
            {
-            for (k =0 ;k < c2 ;++k)
+            for (j =0 ;j< c2 ;j++)
             {
-                for (j =0; j< c1;++j)
+                resul1[i][j] = 0;
+                for(k = 0; k <c1 ;k++)
                 {
-                    resul1[i][k] += arr1[i][j] * arr2[j][k];
+                    resul1[i][j] = resul1[i][j] + (arr1[i][k]*arr2[k][j]);
                 }
             }
 
